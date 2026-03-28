@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hola Mundo</title>
+	<link rel="manifest" href="./manifest.json">
+	<script>
+		if ("serviceWorker" in navigator) {
+			navigator.serviceWorker.register("./sw.js");
+		}
+	</script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: #333;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #222;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #00c6ff;
+    }
+
+    .container {
+      padding: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 10px;
+      background: #4facfe;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #0077ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #111;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Bienvenido a Mi Página</h1>
+  <p>Un ejemplo simple pero con estilo 🎨</p>
+</header>
+
+<nav>
+  <a href="#">Inicio</a>
+  <a href="#">Servicios</a>
+  <a href="#">Contacto</a>
+</nav>
+
+<div class="container">
+  <div class="card">
+    <h2>Sobre esta página</h2>
+    <p>Esta es una página HTML básica pero con diseño moderno usando colores, sombras y animaciones suaves.</p>
+    <a href="#" class="btn">Leer más</a>
+  </div>
+
+  <div class="card">
+    <h2>Servicios</h2>
+    <p>Podrías mostrar aquí tus servicios, proyectos o cualquier contenido importante.</p>
+    <a href="#" class="btn">Ver servicios</a>
+  </div>
+
+  <div class="card">
+    <h2>Contacto</h2>
+    <p>Agrega aquí tu información de contacto o un formulario.</p>
+    <a href="#" class="btn">Contáctame</a>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Mi Página Web | Diseñado con HTML y CSS</p>
+</footer>
+
+</body>
+</html>
