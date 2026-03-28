@@ -1,0 +1,17 @@
+{
+  "name": "Crer Hola Mundo ",
+  "short_name": "PWA APP",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation":"portrait",
+  "scope":"./",
+  "start_url": "./",
+  "icons": [
+    {
+      "src": "./logotipo.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    }
+  ]  
+}
